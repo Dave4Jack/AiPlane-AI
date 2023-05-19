@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Thu Apr 15 12:46:54 2021
 
-@author: dfuggetta
-"""
 
 from kivy.app import App
 from kivy.uix.widget import Widget
