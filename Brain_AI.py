@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Tue May 25 11:50:30 2021
 
-@author: dfuggetta
-"""
 
 import numpy as np
 import random
