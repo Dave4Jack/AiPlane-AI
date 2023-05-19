@@ -1,0 +1,50 @@
+#:kivy 1.0.9
+#:import Vector kivy.vector 
+
+
+<Rettangolo>:
+    size:10,30
+    pos:self.pos
+    canvas:
+        Rectangle:
+            size:self.size
+            pos:self.pos
+            
+<AirPlane>:
+    pos:300,300
+    canvas.before:
+        PushMatrix
+        Rotate:
+            angle:self.angle
+            origin:self.pos
+    canvas.after:
+        PopMatrix
+    canvas:
+        Triangle:
+            points:self.x-25,self.y-10,self.x,self.y+10,self.x+25,self.y-10
+            
+<Prova2Main>:
+
+    airplane:arpln
+
+    canvas:
+        Rectangle:
+            id:orzR
+            pos:0,self.height-5
+            size: self.width, 5
+        Rectangle:
+            id:vrtR1
+            pos:0,0
+            size: 5, self.height
+        Rectangle:
+            id:vrtR2
+            pos:self.width-5,0
+            size: 5, self.height
+            
+    AirPlane:
+        id:arpln
+            
+    
+    
+    
+
